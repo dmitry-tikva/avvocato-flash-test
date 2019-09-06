@@ -1,0 +1,21 @@
+<ngb-accordion *ngIf="categories">
+  <ngb-panel *ngFor="let cat of categories" id="{{cat.id}}">
+    <ng-template ngbPanelTitle>
+      {{cat.name}} <span class="icon icon-chevron"></span>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <ul class="cat-list" *ngIf="cat.items">
+        <li class="cat-item" *ngFor="let catItem of cat.items">
+          <label for="{{catItem.id}}" [ngClass]="{'active': isItChecked(cat.id, catItem.id) > -1}">
+            <input type="checkbox" id="{{catItem.id}}" (change)="checkboxChange($event, cat.id, catItem.id)">
+            <span class="custom-checkbox">
+              <span class="icon icon-check-mark"></span>
+            </span>
+            {{catItem.name}}
+          </label>
+        </li>
+      </ul>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+  

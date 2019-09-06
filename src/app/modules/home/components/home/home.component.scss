@@ -1,0 +1,62 @@
+@import '../../../../../styles/vendors/include-media';
+@import '../../../../../styles/base/variables';
+
+#sidebar-filters {
+  width: 253px;
+  background: $white;
+  box-shadow: 0px 4px 14px rgba(39, 47, 52, 0.1);
+  border-right: 1px solid #E2E9F3;
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+#wrapper {
+  @include media('<tablet') {
+    display: block;
+  }
+}
+
+#content {
+  width: calc(100% - 253px);
+  @include media('<tablet') {
+    width: 100%;
+  }
+
+  .content-inner {
+    padding: 35px 20px;
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+    h2 {
+      margin: 0 0 16px;
+    }
+  }
+
+  .selected-filters {
+    margin: 0 0 32px;
+    .filter-item {
+      box-shadow: 0px 2px 3px rgba(39, 47, 52, 0.04);
+      background: $light-blue;
+      border: 1px solid #E2E9F3;
+      box-sizing: border-box;
+      border-radius: 89px;
+      float: left;
+      padding: 10px 10px 11px 8px;
+      line-height: 23px;
+      font-size: 12px;
+      margin: 0 5px 5px 0;
+      cursor: default;
+      .icon {
+        margin: 0 6px 0 0;
+        font-size: 12px;
+        cursor: pointer;
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+}

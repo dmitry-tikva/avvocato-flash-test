@@ -1,0 +1,236 @@
+{
+  "page": "home",
+  "items": [
+    {
+      "title": "Tributario e Fiscale",
+      "date": "6 AUG",
+      "location": "20144 - Milano (MI) Civile",
+      "text": "Aute id sit officia Lorem ullamco labore id adipisicing in incididunt nostrud. Laborum aliquip nulla aliquip aliquip sint id. Cupidatat exercitation eiusmod et aliqua nostrud non. Est nulla ex nisi eu...",
+      "price": 12,
+      "categories": [
+        {
+          "categoryRef": "spec-cat",
+          "categoryItemRef": "sportivo1"
+        },
+        {
+          "categoryRef": "province-cat",
+          "categoryItemRef": "civile2"
+        },
+        {
+          "categoryRef": "other-cat",
+          "categoryItemRef": "other-cat3"
+        }
+      ]
+    },
+    {
+      "title": "Tributario e Fiscale",
+      "date": "6 AUG",
+      "location": "20144 - Milano (MI) Civile",
+      "text": "Aute id sit officia Lorem ullamco labore id adipisicing in incididunt nostrud. Laborum aliquip nulla aliquip aliquip sint id. Cupidatat exercitation eiusmod et aliqua nostrud non. Est nulla ex nisi eu...",
+      "saved": false,
+      "price": 12,
+      "categories": [
+        {
+          "categoryRef": "spec-cat",
+          "categoryItemRef": "sportivo1"
+        },
+        {
+          "categoryRef": "province-cat",
+          "categoryItemRef": "civile2"
+        },
+        {
+          "categoryRef": "other-cat",
+          "categoryItemRef": "other-cat3"
+        }
+      ]
+    },
+    {
+      "title": "Tributario e Fiscale",
+      "date": "6 AUG",
+      "location": "20144 - Milano (MI) Civile",
+      "text": "Aute id sit officia Lorem ullamco labore id adipisicing in incididunt nostrud. Laborum aliquip nulla aliquip aliquip sint id. Cupidatat exercitation eiusmod et aliqua nostrud non. Est nulla ex nisi eu...",
+      "saved": false,
+      "price": 12,
+      "categories": [
+        {
+          "categoryRef": "spec-cat",
+          "categoryItemRef": "sportivo1"
+        },
+        {
+          "categoryRef": "province-cat",
+          "categoryItemRef": "civile2"
+        },
+        {
+          "categoryRef": "other-cat",
+          "categoryItemRef": "other-cat3"
+        }
+      ]
+    },
+    {
+      "title": "Tributario e Fiscale",
+      "date": "6 AUG",
+      "location": "20144 - Milano (MI) Civile",
+      "text": "Aute id sit officia Lorem ullamco labore id adipisicing in incididunt nostrud. Laborum aliquip nulla aliquip aliquip sint id. Cupidatat exercitation eiusmod et aliqua nostrud non. Est nulla ex nisi eu...",
+      "saved": false,
+      "price": 12,
+      "categories": [
+        {
+          "categoryRef": "spec-cat",
+          "categoryItemRef": "sportivo3"
+        },
+        {
+          "categoryRef": "province-cat",
+          "categoryItemRef": "civile2"
+        },
+        {
+          "categoryRef": "other-cat",
+          "categoryItemRef": "other-cat1"
+        }
+      ]
+    },
+    {
+      "title": "Tributario e Fiscale",
+      "date": "6 AUG",
+      "location": "20144 - Milano (MI) Civile",
+      "text": "Aute id sit officia Lorem ullamco labore id adipisicing in incididunt nostrud. Laborum aliquip nulla aliquip aliquip sint id. Cupidatat exercitation eiusmod et aliqua nostrud non. Est nulla ex nisi eu...",
+      "saved": false,
+      "price": 12,
+      "categories": [
+        {
+          "categoryRef": "spec-cat",
+          "categoryItemRef": "sportivo3"
+        },
+        {
+          "categoryRef": "province-cat",
+          "categoryItemRef": "civile2"
+        },
+        {
+          "categoryRef": "other-cat",
+          "categoryItemRef": "other-cat1"
+        }
+      ]
+    },
+    {
+      "title": "Tributario e Fiscale",
+      "date": "6 AUG",
+      "location": "20144 - Milano (MI) Civile",
+      "text": "Aute id sit officia Lorem ullamco labore id adipisicing in incididunt nostrud. Laborum aliquip nulla aliquip aliquip sint id. Cupidatat exercitation eiusmod et aliqua nostrud non. Est nulla ex nisi eu...",
+      "saved": false,
+      "price": 12,
+      "categories": [
+        {
+          "categoryRef": "spec-cat",
+          "categoryItemRef": "sportivo3"
+        },
+        {
+          "categoryRef": "province-cat",
+          "categoryItemRef": "civile2"
+        },
+        {
+          "categoryRef": "other-cat",
+          "categoryItemRef": "other-cat1"
+        }
+      ]
+    },
+    {
+      "title": "Tributario e Fiscale",
+      "date": "6 AUG",
+      "location": "20144 - Milano (MI) Civile",
+      "text": "Aute id sit officia Lorem ullamco labore id adipisicing in incididunt nostrud. Laborum aliquip nulla aliquip aliquip sint id. Cupidatat exercitation eiusmod et aliqua nostrud non. Est nulla ex nisi eu...",
+      "saved": false,
+      "price": 12,
+      "categories": [
+        {
+          "categoryRef": "spec-cat",
+          "categoryItemRef": "sportivo2"
+        },
+        {
+          "categoryRef": "province-cat",
+          "categoryItemRef": "civile3"
+        },
+        {
+          "categoryRef": "other-cat",
+          "categoryItemRef": "other-cat2"
+        }
+      ]
+    },
+    {
+      "title": "Tributario e Fiscale",
+      "date": "6 AUG",
+      "location": "20144 - Milano (MI) Civile",
+      "text": "Aute id sit officia Lorem ullamco labore id adipisicing in incididunt nostrud. Laborum aliquip nulla aliquip aliquip sint id. Cupidatat exercitation eiusmod et aliqua nostrud non. Est nulla ex nisi eu...",
+      "saved": false,
+      "price": 12,
+      "categories": [
+        {
+          "categoryRef": "spec-cat",
+          "categoryItemRef": "sportivo3"
+        },
+        {
+          "categoryRef": "province-cat",
+          "categoryItemRef": "civile1"
+        },
+        {
+          "categoryRef": "other-cat",
+          "categoryItemRef": "other-cat1"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "spec-cat",
+      "name": "Specializzazioni",
+      "items": [
+        {
+          "id": "sportivo1",
+          "name": "Sportivo 1"
+        },
+        {
+          "id": "sportivo2",
+          "name": "Sportivo 2"
+        },
+        {
+          "id": "sportivo3",
+          "name": "Sportivo 3"
+        }
+      ]
+    },
+    {
+      "id": "province-cat",
+      "name": "Province",
+      "items": [
+        {
+          "id": "civile1",
+          "name": "Civile 1"
+        },
+        {
+          "id": "civile2",
+          "name": "Civile 2"
+        },
+        {
+          "id": "civile3",
+          "name": "Civile 3"
+        }
+      ]
+    },
+    {
+      "id": "other-cat",
+      "name": "Others",
+      "items": [
+        {
+          "id": "other-cat1",
+          "name": "Other 1"
+        },
+        {
+          "id": "other-cat2",
+          "name": "Other 2"
+        },
+        {
+          "id": "other-cat3",
+          "name": "Other 3"
+        }
+      ]
+    }
+  ]
+}

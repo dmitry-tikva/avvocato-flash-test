@@ -1,0 +1,54 @@
+<div id="wrapper" class="flex-holder">
+  <div id="sidebar-filters">
+    <app-filters-list
+      *ngIf="categories"
+      [categories]="categories"
+      [(selectedCategories)]="selectedCategories"></app-filters-list>
+  </div>
+  <div id="content" class="flex-holder">
+    <div class="content-inner">
+      <h2>Ricerca Casi ({{getFilterdItems().length}})</h2>
+      <ul class="selected-filters" *ngIf="selectedCategories">
+        <li class="filter-item" *ngFor="let selectedCat of getItemCategories(selectedCategories); let i = index;">
+          <span class="icon icon-cross" (click)="removeSelectedCat(i)"></span>
+          {{selectedCat.name}}
+        </li>
+      </ul>
+      <div class="results flex-row" *ngIf="getFilterdItems()">
+        <div class="col-6" *ngFor="let item of getFilterdItems()">
+          <div class="content-card">
+            <div class="flag">
+              <span class="icon icon-flag"></span>
+            </div>
+            <span class="date">{{item.date}}</span>
+            <div class="card-content">
+              <h3>{{item.title}}</h3>
+              <ul class="categories" *ngIf="item.categories">
+                <li
+                  *ngFor="let cat of getItemCategories(item.categories); let indx = index;"
+                  class="cat-item"
+                  [ngClass]="{'active': isActiveCategory(item.categories[indx]) > -1}"
+                  (click)="clickCatInCard(item.categories[indx], isActiveCategory(item.categories[indx]))">
+                  {{cat.name}}
+                </li>
+              </ul>
+              <p *ngIf="item.text">{{item.text}}</p>
+              <p *ngIf="item.location" class="location">
+                <span class="icon icon-location"></span>
+                {{item.location}}
+              </p>
+            </div>
+            <div class="card-actions flex-row">
+              <div class="col-6">
+                <button class="btn btn-secondary">Visualizza</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-primary">Visualizza</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

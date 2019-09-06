@@ -1,0 +1,253 @@
+@import '../base/variables';
+
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	align-items: stretch;
+	justify-content: flex-start;
+
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10 {
+		position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+	}
+	.col-1 {
+		@include media('>=desktop') {
+			width: 8.33%;
+		}
+	}
+	.col-2 {
+		@include media('>=desktop') {
+			width: 16.66%;
+		}
+	}
+	.col-3 {
+		@include media('>=desktop') {
+			width: 25%;
+		}
+	}
+	.col-4 {
+		@include media('>=desktop') {
+			width: 33.33%;
+		}
+	}
+	.col-5 {
+		@include media('>=desktop') {
+			width: 41.66%;
+		}
+	}
+	.col-6 {
+		@include media('>=desktop') {
+			width: 50%;
+		}
+	}
+	.col-7 {
+		@include media('>=desktop') {
+			width: 58.33%;
+		}
+	}
+	.col-8 {
+		@include media('>=desktop') {
+			width: 67.77%;
+		}
+	}
+	.col-9 {
+		@include media('>=desktop') {
+			width: 75%;
+		}
+	}
+	.col-10 {
+		@include media('>=desktop') {
+			width: 83.33%;
+		}
+	}
+}
+
+.flex-holder {
+	display: flex;
+	justify-content: center;
+	@include media('>=desktop') {
+		justify-content: space-between;
+	}
+}
+
+.content-card {
+	background: $white;
+	border: 1px solid $light-gray3;
+	box-shadow: 0px 4px 14px rgba(39, 47, 52, 0.1);
+	border-radius: 20px;
+	padding: 10px 20px 5px;
+	position: relative;
+	margin: 0 0 30px;
+	.flag {
+		position: absolute;
+    font-size: 18px;
+    right: 19px;
+		top: 14px;
+		cursor: pointer;
+	}
+	.date {
+		background: $light-blue;
+		font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9FADC1;
+    border-radius: 60px;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 0 0 15px;
+	}
+	h3 {
+		font-size: 18px;
+		line-height: 25px;
+		margin: 0 0 3px;
+	}
+	.categories {
+		margin: 0 0 2px;
+		.cat-item {
+			background: $light-gray2;
+			border-radius: 64px;
+			float: left;
+			font-size: 12px;
+			line-height: 16px;
+			color: $dark-gray;
+			padding: 7px 19px;
+			margin: 0 3px 3px 0;
+			cursor: pointer;
+			&:hover,
+			&.active {
+				background: $light-blue;
+			}
+		}
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+	p {
+		color: $dark-gray;
+		line-height: 17px;
+		font-size: 14px;
+		margin: 0 0 20px;
+		&.location {
+			color: $blue;
+			line-height: 19px;
+			font-size: 14px;
+			.icon {
+				font-size: 19px;
+				margin: 0 8px 0 0;
+				vertical-align: middle;
+			}
+		}
+	}
+	.card-actions {
+		.btn {
+			width: 100%;
+			margin: 0 0 15px;
+		}
+	}
+}
+
+// Accordion
+.accordion {
+	.card {
+		.card-header {
+			.btn {
+				background: none;
+				width: 100%;
+				color: $blue;
+				text-align: left;
+				border-bottom: 1px solid $light-gray3;
+				border-radius: 0;
+				font-weight: bold;
+				font-size: 15px;
+				padding: 22px 20px;
+				line-height: 18px;
+				.icon {
+					float: right;
+					font-size: 8px;
+					line-height: 18px;
+					transform: rotate(0deg);
+					transition: transform 0.5s;
+					&:before {
+						color: $dark-gray;
+					}
+				}
+				&.collapsed {
+					color: $muted-blue;
+					.icon {
+						transform: rotate(180deg);
+						&:before {
+							color: $muted-blue;
+						}
+					}
+				}
+			}
+		}
+		.card-body {
+			.cat-list {
+				padding: 20px 7px;
+				.cat-item {
+					label {
+						cursor: pointer;
+						color: $dark-gray;
+						display: block;
+						margin: 0 0 2px;
+						padding: 10px 13px;
+						line-height: 16px;
+						font-size: 14px;
+						border-radius: 3px;
+						input {
+							display: none;
+						}
+						.custom-checkbox {
+							border: 1px solid $dark-gray;
+							display: inline-block;
+							height: 14px;
+							width: 14px;
+							font-size: 9px;
+							line-height: 12px;
+							vertical-align: top;
+							text-align: center;
+							margin: 0 10px 0 0;
+							.icon {
+								color: $white;
+							}
+						}
+						&.active {
+							background: $light-blue;
+							color: $active-blue;
+							.custom-checkbox {
+								border-color: $active-blue;
+								.icon {
+									color: $active-blue;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// helpers //
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.block {
+	display: block;
+}

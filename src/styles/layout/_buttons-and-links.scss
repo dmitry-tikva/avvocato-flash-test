@@ -1,0 +1,27 @@
+@import '../base/variables';
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 11px;
+	color: $white;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: normal;
+	line-height: 17px;
+	border: none;
+	&.btn-primary {
+		background: $green;
+	}
+	&.btn-secondary {
+		background: $light-gray;
+		color: $green;
+		&:hover {
+			background: $light-blue;
+		}
+	}
+	&:hover {
+		opacity: 0.8;
+	}
+}

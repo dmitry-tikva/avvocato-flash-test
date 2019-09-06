@@ -1,0 +1,164 @@
+@import '../../../../styles/vendors/include-media';
+@import '../../../../styles/base/variables';
+
+#header {
+  background: $blue;
+  box-shadow: 0px 3px 10px rgba(39, 47, 52, 0.18);
+
+  .logo-holder{
+    padding: 9px 0 0 20px;
+    width: 253px;
+
+    .logo {
+      display: block;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    @include media('>tablet') {
+      .desktop {
+        display: block;
+      }
+      .mobile {
+        display: none;
+      }
+    }
+
+    @include media('<tablet') {
+      width: auto;
+      padding: 15px 20px 0;
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+    }
+
+    @include media('<tablet-xs') {
+      padding: 2px 15px 0;
+      .logo {
+        width: 20px;
+      }
+    }
+  }
+
+  .header-nav {
+    margin-right: auto;
+    ul {
+      display: flex;
+      li {
+        position: relative;
+        border-right: 1px solid $blue-gray;
+        background: $blue;
+        &:first-child {
+          border-left: 1px solid $blue-gray;
+        }
+        &.active {
+          &:after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $white;
+          }
+        }
+        a {
+          color: $white;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 64px;
+          display: inline-block;
+          width: 138px;
+          text-align: center;
+          &:hover {
+            background: $blue-gray;
+          }
+          @include media('<tablet-xs') {
+            line-height: 40px;
+            width: auto;
+            padding: 0 7px;
+          }
+        }
+      }
+    }
+  }
+
+  .header-actions {
+    .actions-item {
+      padding: 0 20px;
+      height: 64px;
+      border-left: 1px solid $blue-gray;
+      align-items: center;
+      &:first-child {
+        border: none;
+      }
+      @include media('<tablet-xs') {
+        height: 40px;
+        padding: 0 10px;
+      }
+      @include media('<phone-xl') {
+        padding: 0 5px;
+      }
+    }
+
+    .buy-credits-btn {
+      background: $green;
+      display: inline-block;
+      padding: 11px 15px 11px;
+      border-radius: 20px;
+      font-size: 13px;
+      line-height: 12px;
+      .icon {
+        margin: 0 5px 0 0; 
+      }
+      @include media('<desktop') {
+        .text {
+          display: none;
+        }
+      }
+      @include media('<tablet-xs') {
+        padding: 8px;
+        font-size: 11px;
+        line-height: 12px;
+      }
+    }
+
+    .account-info {
+      align-items: center;
+      .user-photo {
+        width: 35px;
+        height: 35px;
+        overflow: hidden;
+        border: 2px solid $white;
+        border-radius: 35px;
+        @include media('<tablet-xs') {
+          width: 20px;
+          height: 20px;
+        }
+      }
+  
+      .user-name {
+        color: $white;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 0 0 10px;
+        cursor: pointer;
+        .icon {
+          font-size: 6px;
+          margin: 0 5px 0 0;
+        }
+        @include media('<desktop') {
+          .name {
+            display: none;
+          }
+        }
+      }
+    }
+
+  }
+}
